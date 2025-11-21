@@ -1,0 +1,216 @@
+2025-11-20 15:41:43 - -------------------
+2025-11-20 15:41:43 - Warrants Logs
+2025-11-20 15:41:43 - Batch 0
+2025-11-20 15:41:43 - -------------------
+2025-11-20 15:47:48 - -------------------
+2025-11-20 15:47:48 - Warrants Logs
+2025-11-20 15:47:48 - Batch 0
+2025-11-20 15:47:48 - -------------------
+2025-11-20 15:47:48 - Insertion failed for Warrant Number 2012A3620400001: Conflict - 2012A3620400001: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400001'.
+2025-11-20 15:47:49 - Insertion failed for Warrant Number 2012A3620400002: Conflict - 2012A3620400002: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400002'.
+2025-11-20 15:47:49 - Insertion failed for Warrant Number 2012A3620400003: Conflict - 2012A3620400003: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400003'.
+2025-11-20 15:47:49 - Insertion failed for Warrant Number 2012A3620400004: Conflict - 2012A3620400004: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400004'.
+2025-11-20 15:47:50 - Insertion failed for Warrant Number 2012A3620400005: Conflict - 2012A3620400005: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400005'.
+2025-11-20 15:47:50 - Insertion failed for Warrant Number 2012A3620400006: Conflict - 2012A3620400006: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400006'.
+2025-11-20 15:47:50 - Insertion failed for Warrant Number 2012A3620400007: Conflict - 2012A3620400007: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400007'.
+2025-11-20 15:47:50 - Insertion failed for Warrant Number 2012A3620400008: Conflict - 2012A3620400008: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400008'.
+2025-11-20 15:47:51 - Insertion failed for Warrant Number 2012A3620400009: Conflict - 2012A3620400009: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400009'.
+2025-11-20 15:47:51 - Insertion failed for Warrant Number 2012A3620400010: Conflict - 2012A3620400010: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400010'.
+2025-11-20 15:47:51 - Insertion failed for Warrant Number 2012A3620400011: Conflict - 2012A3620400011: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400011'.
+2025-11-20 15:47:52 - Insertion failed for Warrant Number 2012A3620400012: Conflict - 2012A3620400012: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400012'.
+2025-11-20 15:47:52 - Insertion failed for Warrant Number 2012A3620400013: Conflict - 2012A3620400013: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400013'.
+2025-11-20 15:47:52 - Insertion failed for Warrant Number 2012A3620400014: Conflict - 2012A3620400014: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400014'.
+2025-11-20 15:47:53 - Insertion failed for Warrant Number 2012A3620400015: Conflict - 2012A3620400015: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400015'.
+2025-11-20 15:47:53 - Insertion failed for Warrant Number 2012A3620400016: Conflict - 2012A3620400016: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400016'.
+2025-11-20 15:47:53 - Insertion failed for Warrant Number 2012A3620400017: Conflict - 2012A3620400017: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400017'.
+2025-11-20 15:47:54 - Insertion failed for Warrant Number 2012A3620400018: Conflict - 2012A3620400018: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400018'.
+2025-11-20 15:47:54 - Insertion failed for Warrant Number 2012A3620400019: Conflict - 2012A3620400019: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400019'.
+2025-11-20 15:47:55 - Insertion failed for Warrant Number 2012A3620400020: Conflict - 2012A3620400020: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400020'.
+2025-11-20 15:47:55 - Insertion failed for Warrant Number 2012A3620400021: Conflict - 2012A3620400021: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400021'.
+2025-11-20 15:47:56 - Insertion failed for Warrant Number 2012A3620400022: Conflict - 2012A3620400022: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400022'.
+2025-11-20 15:47:56 - Insertion failed for Warrant Number 2012A3620400023: Conflict - 2012A3620400023: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400023'.
+2025-11-20 15:47:56 - Insertion failed for Warrant Number 2012A3620400024: Conflict - 2012A3620400024: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400024'.
+2025-11-20 15:47:57 - Insertion failed for Warrant Number 2012A3620400025: Conflict - 2012A3620400025: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400025'.
+2025-11-20 15:47:57 - Insertion failed for Warrant Number 2012A3620400026: Conflict - 2012A3620400026: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400026'.
+2025-11-20 15:47:57 - Insertion failed for Warrant Number 2012A3620400027: Conflict - 2012A3620400027: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400027'.
+2025-11-20 15:47:58 - Insertion failed for Warrant Number 2012A3620400028: Conflict - 2012A3620400028: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400028'.
+2025-11-20 15:47:58 - Insertion failed for Warrant Number 2012A3620400029: Conflict - 2012A3620400029: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400029'.
+2025-11-20 15:47:58 - Insertion failed for Warrant Number 2012A3620400030: Conflict - 2012A3620400030: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012A3620400030'.
+2025-11-20 15:47:59 - Insertion failed for Warrant Number 2012C3620400001: Conflict - 2012C3620400001: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400001'.
+2025-11-20 15:47:59 - Insertion failed for Warrant Number 2012C3620400002: Conflict - 2012C3620400002: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400002'.
+2025-11-20 15:47:59 - Insertion failed for Warrant Number 2012C3620400003: Conflict - 2012C3620400003: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400003'.
+2025-11-20 15:48:00 - Insertion failed for Warrant Number 2012C3620400004: Conflict - 2012C3620400004: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400004'.
+2025-11-20 15:48:00 - Insertion failed for Warrant Number 2012C3620400005: Conflict - 2012C3620400005: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400005'.
+2025-11-20 15:48:00 - Insertion failed for Warrant Number 2012C3620400006: Conflict - 2012C3620400006: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400006'.
+2025-11-20 15:48:01 - Insertion failed for Warrant Number 2012C3620400007: Conflict - 2012C3620400007: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400007'.
+2025-11-20 15:48:01 - Insertion failed for Warrant Number 2012C3620400008: Conflict - 2012C3620400008: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400008'.
+2025-11-20 15:48:01 - Insertion failed for Warrant Number 2012C3620400009: Conflict - 2012C3620400009: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400009'.
+2025-11-20 15:48:02 - Insertion failed for Warrant Number 2012C3620400010: Conflict - 2012C3620400010: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400010'.
+2025-11-20 15:48:02 - Insertion failed for Warrant Number 2012C3620400011: Conflict - 2012C3620400011: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400011'.
+2025-11-20 15:48:02 - Insertion failed for Warrant Number 2012C3620400012: Conflict - 2012C3620400012: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400012'.
+2025-11-20 15:48:03 - Insertion failed for Warrant Number 2012C3620400013: Conflict - 2012C3620400013: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400013'.
+2025-11-20 15:48:03 - Insertion failed for Warrant Number 2012C3620400014: Conflict - 2012C3620400014: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400014'.
+2025-11-20 15:48:04 - Insertion failed for Warrant Number 2012C3620400015: Conflict - 2012C3620400015: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400015'.
+2025-11-20 15:48:04 - Insertion failed for Warrant Number 2012C3620400016: Conflict - 2012C3620400016: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400016'.
+2025-11-20 15:48:04 - Insertion failed for Warrant Number 2012C3620400017: Conflict - 2012C3620400017: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400017'.
+2025-11-20 15:48:04 - Insertion failed for Warrant Number 2012C3620400018: Conflict - 2012C3620400018: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400018'.
+2025-11-20 15:48:05 - Insertion failed for Warrant Number 2012C3620400019: Conflict - 2012C3620400019: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400019'.
+2025-11-20 15:48:05 - Insertion failed for Warrant Number 2012C3620400020: Conflict - 2012C3620400020: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400020'.
+2025-11-20 15:48:05 - Insertion failed for Warrant Number 2012C3620400021: Conflict - 2012C3620400021: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400021'.
+2025-11-20 15:48:05 - Insertion failed for Warrant Number 2012C3620400022: Conflict - 2012C3620400022: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400022'.
+2025-11-20 15:48:06 - Insertion failed for Warrant Number 2012C3620400023: Conflict - 2012C3620400023: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2012C3620400023'.
+2025-11-20 15:48:06 - Insertion failed for Warrant Number 2013A3620400001: Conflict - 2013A3620400001: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400001'.
+2025-11-20 15:48:06 - Insertion failed for Warrant Number 2013A3620400002: Conflict - 2013A3620400002: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400002'.
+2025-11-20 15:48:06 - Insertion failed for Warrant Number 2013A3620400003: Conflict - 2013A3620400003: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400003'.
+2025-11-20 15:48:06 - Insertion failed for Warrant Number 2013A3620400004: Conflict - 2013A3620400004: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400004'.
+2025-11-20 15:48:06 - Insertion failed for Warrant Number 2013A3620400005: Conflict - 2013A3620400005: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400005'.
+2025-11-20 15:48:07 - Insertion failed for Warrant Number 2013A3620400006: Conflict - 2013A3620400006: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400006'.
+2025-11-20 15:48:07 - Insertion failed for Warrant Number 2013A3620400007: Conflict - 2013A3620400007: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400007'.
+2025-11-20 15:48:07 - Insertion failed for Warrant Number 2013A3620400008: Conflict - 2013A3620400008: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400008'.
+2025-11-20 15:48:07 - Insertion failed for Warrant Number 2013A3620400009: Conflict - 2013A3620400009: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400009'.
+2025-11-20 15:48:08 - Insertion failed for Warrant Number 2013A3620400010: Conflict - 2013A3620400010: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400010'.
+2025-11-20 15:48:08 - Insertion failed for Warrant Number 2013A3620400011: Conflict - 2013A3620400011: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400011'.
+2025-11-20 15:48:08 - Insertion failed for Warrant Number 2013A3620400012: Conflict - 2013A3620400012: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400012'.
+2025-11-20 15:48:09 - Insertion failed for Warrant Number 2013A3620400013: Conflict - 2013A3620400013: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400013'.
+2025-11-20 15:48:09 - Insertion failed for Warrant Number 2013A3620400014: Conflict - 2013A3620400014: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400014'.
+2025-11-20 15:48:09 - Insertion failed for Warrant Number 2013A3620400015: Conflict - 2013A3620400015: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400015'.
+2025-11-20 15:48:10 - Insertion failed for Warrant Number 2013A3620400016: Conflict - 2013A3620400016: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400016'.
+2025-11-20 15:48:10 - Insertion failed for Warrant Number 2013A3620400017: Conflict - 2013A3620400017: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400017'.
+2025-11-20 15:48:11 - Insertion failed for Warrant Number 2013A3620400018: Conflict - 2013A3620400018: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400018'.
+2025-11-20 15:48:11 - Insertion failed for Warrant Number 2013A3620400019: Conflict - 2013A3620400019: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400019'.
+2025-11-20 15:48:11 - Insertion failed for Warrant Number 2013A3620400020: Conflict - 2013A3620400020: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400020'.
+2025-11-20 15:48:12 - Insertion failed for Warrant Number 2013A3620400021: Conflict - 2013A3620400021: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400021'.
+2025-11-20 15:48:12 - Insertion failed for Warrant Number 2013A3620400022: Conflict - 2013A3620400022: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400022'.
+2025-11-20 15:48:12 - Insertion failed for Warrant Number 2013A3620400023: Conflict - 2013A3620400023: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400023'.
+2025-11-20 15:48:13 - Insertion failed for Warrant Number 2013A3620400024: Conflict - 2013A3620400024: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400024'.
+2025-11-20 15:48:13 - Insertion failed for Warrant Number 2013A3620400025: Conflict - 2013A3620400025: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400025'.
+2025-11-20 15:48:14 - Insertion failed for Warrant Number 2013A3620400026: Conflict - 2013A3620400026: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400026'.
+2025-11-20 15:48:14 - Insertion failed for Warrant Number 2013A3620400027: Conflict - 2013A3620400027: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400027'.
+2025-11-20 15:48:14 - Insertion failed for Warrant Number 2013A3620400028: Conflict - 2013A3620400028: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400028'.
+2025-11-20 15:48:15 - Insertion failed for Warrant Number 2013A3620400029: Conflict - 2013A3620400029: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400029'.
+2025-11-20 15:48:15 - Insertion failed for Warrant Number 2013A3620400030: Conflict - 2013A3620400030: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400030'.
+2025-11-20 15:48:15 - Insertion failed for Warrant Number 2013A3620400031: Conflict - 2013A3620400031: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400031'.
+2025-11-20 15:48:16 - Insertion failed for Warrant Number 2013A3620400032: Conflict - 2013A3620400032: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400032'.
+2025-11-20 15:48:16 - Insertion failed for Warrant Number 2013A3620400033: Conflict - 2013A3620400033: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400033'.
+2025-11-20 15:48:17 - Insertion failed for Warrant Number 2013A3620400034: Conflict - 2013A3620400034: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400034'.
+2025-11-20 15:48:17 - Insertion failed for Warrant Number 2013A3620400035: Conflict - 2013A3620400035: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Warrant Number '2013A3620400035'.
+2025-11-20 15:48:21 - -------------------
+2025-11-20 15:48:21 - Warrants Logs
+2025-11-20 15:48:21 - Batch 100
+2025-11-20 15:48:21 - -------------------
+2025-11-20 15:48:59 - -------------------
+2025-11-20 15:48:59 - Warrants Logs
+2025-11-20 15:48:59 - Batch 200
+2025-11-20 15:48:59 - -------------------
+2025-11-20 15:49:38 - -------------------
+2025-11-20 15:49:38 - Warrants Logs
+2025-11-20 15:49:38 - Batch 300
+2025-11-20 15:49:38 - -------------------
+2025-11-20 15:50:13 - -------------------
+2025-11-20 15:50:13 - Warrants Logs
+2025-11-20 15:50:13 - Batch 400
+2025-11-20 15:50:13 - -------------------
+2025-11-20 15:50:53 - -------------------
+2025-11-20 15:50:53 - Warrants Logs
+2025-11-20 15:50:53 - Batch 500
+2025-11-20 15:50:53 - -------------------
+2025-11-20 15:51:42 - -------------------
+2025-11-20 15:51:42 - Warrants Logs
+2025-11-20 15:51:42 - Batch 600
+2025-11-20 15:51:42 - -------------------
+2025-11-20 15:52:29 - -------------------
+2025-11-20 15:52:29 - Warrants Logs
+2025-11-20 15:52:29 - Batch 700
+2025-11-20 15:52:29 - -------------------
+2025-11-20 15:53:14 - -------------------
+2025-11-20 15:53:14 - Warrants Logs
+2025-11-20 15:53:14 - Batch 800
+2025-11-20 15:53:14 - -------------------
+2025-11-20 15:53:47 - -------------------
+2025-11-20 15:53:47 - Warrants Logs
+2025-11-20 15:53:47 - Batch 900
+2025-11-20 15:53:47 - -------------------
+2025-11-20 15:54:25 - -------------------
+2025-11-20 15:54:25 - Warrants Logs
+2025-11-20 15:54:25 - Batch 1000
+2025-11-20 15:54:25 - -------------------
+2025-11-20 15:55:05 - -------------------
+2025-11-20 15:55:05 - Warrants Logs
+2025-11-20 15:55:05 - Batch 1100
+2025-11-20 15:55:05 - -------------------
+2025-11-20 15:55:45 - -------------------
+2025-11-20 15:55:45 - Warrants Logs
+2025-11-20 15:55:45 - Batch 1200
+2025-11-20 15:55:45 - -------------------
+2025-11-20 15:56:25 - -------------------
+2025-11-20 15:56:25 - Warrants Logs
+2025-11-20 15:56:25 - Batch 1300
+2025-11-20 15:56:25 - -------------------
+2025-11-20 15:57:05 - -------------------
+2025-11-20 15:57:05 - Warrants Logs
+2025-11-20 15:57:05 - Batch 1400
+2025-11-20 15:57:05 - -------------------
+2025-11-20 15:57:42 - -------------------
+2025-11-20 15:57:42 - Warrants Logs
+2025-11-20 15:57:42 - Batch 1500
+2025-11-20 15:57:42 - -------------------
+2025-11-20 15:58:23 - -------------------
+2025-11-20 15:58:23 - Warrants Logs
+2025-11-20 15:58:23 - Batch 1600
+2025-11-20 15:58:23 - -------------------
+2025-11-20 15:59:03 - -------------------
+2025-11-20 15:59:03 - Warrants Logs
+2025-11-20 15:59:03 - Batch 1700
+2025-11-20 15:59:03 - -------------------
+2025-11-20 15:59:40 - -------------------
+2025-11-20 15:59:40 - Warrants Logs
+2025-11-20 15:59:40 - Batch 1800
+2025-11-20 15:59:40 - -------------------
+2025-11-20 15:59:43 - -------------------
+2025-11-20 15:59:43 - Warrants Logs
+2025-11-20 15:59:43 - Batch 0
+2025-11-20 15:59:43 - -------------------
+2025-11-20 15:59:59 - -------------------
+2025-11-20 15:59:59 - Warrants Logs
+2025-11-20 15:59:59 - Batch 0
+2025-11-20 15:59:59 - -------------------
+2025-11-20 16:00:17 - -------------------
+2025-11-20 16:00:17 - Warrants Logs
+2025-11-20 16:00:17 - Batch 100
+2025-11-20 16:00:17 - -------------------
+2025-11-20 16:00:34 - -------------------
+2025-11-20 16:00:34 - Warrants Logs
+2025-11-20 16:00:34 - Batch 200
+2025-11-20 16:00:34 - -------------------
+2025-11-20 16:00:52 - -------------------
+2025-11-20 16:00:52 - Warrants Logs
+2025-11-20 16:00:52 - Batch 300
+2025-11-20 16:00:52 - -------------------
+2025-11-20 16:01:11 - -------------------
+2025-11-20 16:01:11 - Warrants Logs
+2025-11-20 16:01:11 - Batch 400
+2025-11-20 16:01:11 - -------------------
+2025-11-20 16:01:29 - -------------------
+2025-11-20 16:01:29 - Warrants Logs
+2025-11-20 16:01:29 - Batch 500
+2025-11-20 16:01:29 - -------------------
+2025-11-20 16:01:47 - -------------------
+2025-11-20 16:01:47 - Warrants Logs
+2025-11-20 16:01:47 - Batch 600
+2025-11-20 16:01:47 - -------------------
+2025-11-20 16:02:05 - -------------------
+2025-11-20 16:02:05 - Warrants Logs
+2025-11-20 16:02:05 - Batch 700
+2025-11-20 16:02:05 - -------------------
+2025-11-20 16:02:22 - -------------------
+2025-11-20 16:02:22 - Warrants Logs
+2025-11-20 16:02:22 - Batch 800
+2025-11-20 16:02:22 - -------------------
+2025-11-20 16:02:40 - -------------------
+2025-11-20 16:02:40 - Warrants Logs
+2025-11-20 16:02:40 - Batch 900
+2025-11-20 16:02:40 - -------------------
+2025-11-20 16:02:58 - -------------------
+2025-11-20 16:02:58 - Warrants Logs
+2025-11-20 16:02:58 - Batch 1000
+2025-11-20 16:02:58 - -------------------

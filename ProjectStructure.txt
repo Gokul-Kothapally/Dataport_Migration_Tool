@@ -1,0 +1,64 @@
+Folder PATH listing for volume OS
+Volume serial number is 4AD1-5781
+C:.
+|   ArmsArchiving.sln
+|   ProjectStructure.txt
+|   
+\---ArchivingTool
+    |   appsettings.json
+    |   ArchivingTool.csproj
+    |   ArchivingTool.csproj.user
+    |   Form1.cs
+    |   Form1.Designer.cs
+    |   Form1.resx
+    |   Program.cs
+    |   
+    +---bin
+    |   \---Debug
+    |       \---net8.0-windows
+    +---Enums
+    |       Enums.cs
+    |       
+    +---Model.Arms
+    |       ApplicationSetting.cs
+    |       CitationExportRequest.cs
+    |       CitationExportResponse.cs
+    |       CitationImportErrorResponse.cs
+    |       CitationImportRequest.cs
+    |       CitationImportResponse.cs
+    |       CommonRequestModel.cs
+    |       CommonResponse.cs
+    |       TokenResponse.cs
+    |       
+    +---obj
+    |   |   ArchivingTool.csproj.nuget.dgspec.json
+    |   |   ArchivingTool.csproj.nuget.g.props
+    |   |   ArchivingTool.csproj.nuget.g.targets
+    |   |   project.assets.json
+    |   |   project.nuget.cache
+    |   |   
+    |   \---Debug
+    |       \---net8.0-windows
+    |           |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    |           |   ArchivingTool.AssemblyInfo.cs
+    |           |   ArchivingTool.AssemblyInfoInputs.cache
+    |           |   ArchivingTool.assets.cache
+    |           |   ArchivingTool.csproj.AssemblyReference.cache
+    |           |   ArchivingTool.designer.deps.json
+    |           |   ArchivingTool.designer.runtimeconfig.json
+    |           |   ArchivingTool.GeneratedMSBuildEditorConfig.editorconfig
+    |           |   ArchivingTool.GlobalUsings.g.cs
+    |           |   
+    |           +---ref
+    |           \---refint
+    \---Service.Arms
+        +---Data
+        |       ArchivingContext.cs
+        |       
+        +---Models
+        \---Service
+                ApiTokenService.cs
+                CitationExportService.cs
+                CitationImportService.cs
+                HttpClientService.cs
+                

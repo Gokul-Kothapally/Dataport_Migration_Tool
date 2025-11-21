@@ -1,0 +1,21 @@
+2025-11-13 08:35:58 - -------------------
+2025-11-13 08:35:58 - Evidences Logs
+2025-11-13 08:35:58 - Batch 0
+2025-11-13 08:35:58 - -------------------
+2025-11-13 08:36:07 - -------------------
+2025-11-13 08:36:07 - Evidences Logs
+2025-11-13 08:36:07 - Batch 0
+2025-11-13 08:36:07 - -------------------
+2025-11-13 08:36:11 - Insertion failed for evidence 22-08-0611: Conflict - Unknown: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Case Number '22-08-0611'.
+2025-11-13 08:36:11 - Insertion failed for evidence 22-08-0613: Conflict - Unknown: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Case Number '22-08-0613'.
+2025-11-13 08:36:15 - Insertion failed for evidence 22-10-0847: Conflict - Unknown: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Case Number '22-10-0847'.
+2025-11-13 08:36:16 - Insertion failed for evidence 22-12-1030: Conflict - Unknown: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Case Number '22-12-1030'.
+2025-11-13 08:36:21 - -------------------
+2025-11-13 08:36:21 - Evidences Logs
+2025-11-13 08:36:21 - Batch 100
+2025-11-13 08:36:21 - -------------------
+2025-11-13 08:36:24 - Insertion failed for evidence 23-08-0647: Conflict - Unknown: Conflict - Record already exists for AgencyKey 'BA333330-E2F4-464F-868B-1BC8651AF3A8' with Case Number '23-08-0647'.
+2025-11-13 08:36:28 - -------------------
+2025-11-13 08:36:28 - Evidences Logs
+2025-11-13 08:36:28 - Batch 0
+2025-11-13 08:36:28 - -------------------

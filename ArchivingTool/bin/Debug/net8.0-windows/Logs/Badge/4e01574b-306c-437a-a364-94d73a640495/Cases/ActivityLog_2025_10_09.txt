@@ -1,0 +1,220 @@
+2025-10-09 14:22:54 - -------------------
+2025-10-09 14:22:54 - Cases Logs
+2025-10-09 14:22:54 - Batch 0
+2025-10-09 14:22:54 - -------------------
+2025-10-09 14:22:54 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 14:25:53 - -------------------
+2025-10-09 14:25:53 - Cases Logs
+2025-10-09 14:25:53 - Batch 1000
+2025-10-09 14:25:53 - -------------------
+2025-10-09 14:28:55 - -------------------
+2025-10-09 14:28:55 - Cases Logs
+2025-10-09 14:28:55 - Batch 2000
+2025-10-09 14:28:55 - -------------------
+2025-10-09 14:32:02 - -------------------
+2025-10-09 14:32:02 - Cases Logs
+2025-10-09 14:32:02 - Batch 3000
+2025-10-09 14:32:02 - -------------------
+2025-10-09 14:35:10 - -------------------
+2025-10-09 14:35:10 - Cases Logs
+2025-10-09 14:35:10 - Batch 4000
+2025-10-09 14:35:10 - -------------------
+2025-10-09 14:38:18 - -------------------
+2025-10-09 14:38:18 - Cases Logs
+2025-10-09 14:38:18 - Batch 5000
+2025-10-09 14:38:18 - -------------------
+2025-10-09 14:41:24 - -------------------
+2025-10-09 14:41:24 - Cases Logs
+2025-10-09 14:41:24 - Batch 6000
+2025-10-09 14:41:24 - -------------------
+2025-10-09 14:44:33 - -------------------
+2025-10-09 14:44:33 - Cases Logs
+2025-10-09 14:44:33 - Batch 7000
+2025-10-09 14:44:33 - -------------------
+2025-10-09 14:47:39 - -------------------
+2025-10-09 14:47:39 - Cases Logs
+2025-10-09 14:47:39 - Batch 8000
+2025-10-09 14:47:39 - -------------------
+2025-10-09 14:50:48 - -------------------
+2025-10-09 14:50:48 - Cases Logs
+2025-10-09 14:50:48 - Batch 9000
+2025-10-09 14:50:48 - -------------------
+2025-10-09 14:53:52 - -------------------
+2025-10-09 14:53:52 - Cases Logs
+2025-10-09 14:53:52 - Batch 10000
+2025-10-09 14:53:52 - -------------------
+2025-10-09 14:56:54 - -------------------
+2025-10-09 14:56:54 - Cases Logs
+2025-10-09 14:56:54 - Batch 11000
+2025-10-09 14:56:54 - -------------------
+2025-10-09 15:00:05 - -------------------
+2025-10-09 15:00:05 - Cases Logs
+2025-10-09 15:00:05 - Batch 12000
+2025-10-09 15:00:05 - -------------------
+2025-10-09 15:03:19 - -------------------
+2025-10-09 15:03:19 - Cases Logs
+2025-10-09 15:03:19 - Batch 13000
+2025-10-09 15:03:19 - -------------------
+2025-10-09 15:06:28 - -------------------
+2025-10-09 15:06:28 - Cases Logs
+2025-10-09 15:06:28 - Batch 14000
+2025-10-09 15:06:28 - -------------------
+2025-10-09 15:09:40 - -------------------
+2025-10-09 15:09:40 - Cases Logs
+2025-10-09 15:09:40 - Batch 15000
+2025-10-09 15:09:40 - -------------------
+2025-10-09 15:12:53 - -------------------
+2025-10-09 15:12:53 - Cases Logs
+2025-10-09 15:12:53 - Batch 16000
+2025-10-09 15:12:53 - -------------------
+2025-10-09 15:16:15 - -------------------
+2025-10-09 15:16:15 - Cases Logs
+2025-10-09 15:16:15 - Batch 17000
+2025-10-09 15:16:15 - -------------------
+2025-10-09 15:19:27 - -------------------
+2025-10-09 15:19:27 - Cases Logs
+2025-10-09 15:19:27 - Batch 18000
+2025-10-09 15:19:27 - -------------------
+2025-10-09 15:22:34 - -------------------
+2025-10-09 15:22:34 - Cases Logs
+2025-10-09 15:22:34 - Batch 19000
+2025-10-09 15:22:34 - -------------------
+2025-10-09 15:25:41 - -------------------
+2025-10-09 15:25:41 - Cases Logs
+2025-10-09 15:25:41 - Batch 20000
+2025-10-09 15:25:41 - -------------------
+2025-10-09 15:28:50 - -------------------
+2025-10-09 15:28:50 - Cases Logs
+2025-10-09 15:28:50 - Batch 21000
+2025-10-09 15:28:50 - -------------------
+2025-10-09 15:32:00 - -------------------
+2025-10-09 15:32:00 - Cases Logs
+2025-10-09 15:32:00 - Batch 22000
+2025-10-09 15:32:00 - -------------------
+2025-10-09 15:35:13 - -------------------
+2025-10-09 15:35:13 - Cases Logs
+2025-10-09 15:35:13 - Batch 23000
+2025-10-09 15:35:13 - -------------------
+2025-10-09 15:38:26 - -------------------
+2025-10-09 15:38:26 - Cases Logs
+2025-10-09 15:38:26 - Batch 24000
+2025-10-09 15:38:26 - -------------------
+2025-10-09 15:41:41 - -------------------
+2025-10-09 15:41:41 - Cases Logs
+2025-10-09 15:41:41 - Batch 25000
+2025-10-09 15:41:41 - -------------------
+2025-10-09 15:45:03 - -------------------
+2025-10-09 15:45:03 - Cases Logs
+2025-10-09 15:45:03 - Batch 26000
+2025-10-09 15:45:03 - -------------------
+2025-10-09 15:48:24 - -------------------
+2025-10-09 15:48:24 - Cases Logs
+2025-10-09 15:48:24 - Batch 27000
+2025-10-09 15:48:24 - -------------------
+2025-10-09 15:51:42 - -------------------
+2025-10-09 15:51:42 - Cases Logs
+2025-10-09 15:51:42 - Batch 28000
+2025-10-09 15:51:42 - -------------------
+2025-10-09 15:55:05 - -------------------
+2025-10-09 15:55:05 - Cases Logs
+2025-10-09 15:55:05 - Batch 29000
+2025-10-09 15:55:05 - -------------------
+2025-10-09 15:58:28 - -------------------
+2025-10-09 15:58:28 - Cases Logs
+2025-10-09 15:58:28 - Batch 30000
+2025-10-09 15:58:28 - -------------------
+2025-10-09 16:01:50 - -------------------
+2025-10-09 16:01:50 - Cases Logs
+2025-10-09 16:01:50 - Batch 31000
+2025-10-09 16:01:50 - -------------------
+2025-10-09 16:05:13 - -------------------
+2025-10-09 16:05:13 - Cases Logs
+2025-10-09 16:05:13 - Batch 32000
+2025-10-09 16:05:13 - -------------------
+2025-10-09 16:08:40 - -------------------
+2025-10-09 16:08:40 - Cases Logs
+2025-10-09 16:08:40 - Batch 33000
+2025-10-09 16:08:40 - -------------------
+2025-10-09 16:12:12 - -------------------
+2025-10-09 16:12:12 - Cases Logs
+2025-10-09 16:12:12 - Batch 34000
+2025-10-09 16:12:12 - -------------------
+2025-10-09 16:15:51 - -------------------
+2025-10-09 16:15:51 - Cases Logs
+2025-10-09 16:15:51 - Batch 35000
+2025-10-09 16:15:51 - -------------------
+2025-10-09 16:17:53 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:19:26 - -------------------
+2025-10-09 16:19:26 - Cases Logs
+2025-10-09 16:19:26 - Batch 36000
+2025-10-09 16:19:26 - -------------------
+2025-10-09 16:19:30 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:21:33 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:22:34 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:23:04 - -------------------
+2025-10-09 16:23:04 - Cases Logs
+2025-10-09 16:23:04 - Batch 37000
+2025-10-09 16:23:04 - -------------------
+2025-10-09 16:24:24 - Insertion failed for Case Number Unknown: Conflict - 04-11-1863: Conflict - Record already exists for AgencyKey '4E01574B-306C-437A-A364-94D73A640495' with Case Number '04-11-1863'.
+2025-10-09 16:24:37 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:26:45 - -------------------
+2025-10-09 16:26:45 - Cases Logs
+2025-10-09 16:26:45 - Batch 38000
+2025-10-09 16:26:45 - -------------------
+2025-10-09 16:28:33 - Insertion failed for Case Number Unknown: Conflict - 05-06-0897: Conflict - Record already exists for AgencyKey '4E01574B-306C-437A-A364-94D73A640495' with Case Number '05-06-0897'.
+2025-10-09 16:29:15 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:29:44 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:29:49 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:30:26 - -------------------
+2025-10-09 16:30:26 - Cases Logs
+2025-10-09 16:30:26 - Batch 39000
+2025-10-09 16:30:26 - -------------------
+2025-10-09 16:31:29 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:32:20 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:32:30 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:34:09 - -------------------
+2025-10-09 16:34:09 - Cases Logs
+2025-10-09 16:34:09 - Batch 40000
+2025-10-09 16:34:09 - -------------------
+2025-10-09 16:34:47 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:35:54 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:37:59 - -------------------
+2025-10-09 16:37:59 - Cases Logs
+2025-10-09 16:37:59 - Batch 41000
+2025-10-09 16:37:59 - -------------------
+2025-10-09 16:39:38 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:39:44 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:39:54 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:41:48 - -------------------
+2025-10-09 16:41:48 - Cases Logs
+2025-10-09 16:41:48 - Batch 42000
+2025-10-09 16:41:48 - -------------------
+2025-10-09 16:42:26 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:42:46 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:43:48 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:45:22 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:45:38 - -------------------
+2025-10-09 16:45:38 - Cases Logs
+2025-10-09 16:45:38 - Batch 43000
+2025-10-09 16:45:38 - -------------------
+2025-10-09 16:47:09 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:49:29 - -------------------
+2025-10-09 16:49:29 - Cases Logs
+2025-10-09 16:49:29 - Batch 44000
+2025-10-09 16:49:29 - -------------------
+2025-10-09 16:50:57 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:51:17 - Insertion failed for Case Number Unknown: Conflict - 08-09-1125: Conflict - Record already exists for AgencyKey '4E01574B-306C-437A-A364-94D73A640495' with Case Number '08-09-1125'.
+2025-10-09 16:51:35 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:53:23 - -------------------
+2025-10-09 16:53:23 - Cases Logs
+2025-10-09 16:53:23 - Batch 45000
+2025-10-09 16:53:23 - -------------------
+2025-10-09 16:54:35 - Insertion failed for Case Number Unknown: BadRequest - : BadRequest - Case Number is required in the first node.
+2025-10-09 16:57:17 - -------------------
+2025-10-09 16:57:17 - Cases Logs
+2025-10-09 16:57:17 - Batch 46000
+2025-10-09 16:57:17 - -------------------
+2025-10-09 17:00:55 - -------------------
+2025-10-09 17:00:55 - Cases Logs
+2025-10-09 17:00:55 - Batch 47000
+2025-10-09 17:00:55 - -------------------

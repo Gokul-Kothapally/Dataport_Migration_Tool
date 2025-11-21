@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\archivingtool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\service.arms\\services\\lawtrak\\bookingimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\service.arms\\services\\lawtrak\\bookingimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\service.arms\\services\\lawtrak\\citationimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\service.arms\\services\\lawtrak\\citationimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\service.arms\\services\\lawtrak\\warrantimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\service.arms\\services\\lawtrak\\warrantimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\service.arms\\services\\common\\attachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\service.arms\\services\\common\\attachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\service.arms\\services\\lawtrak\\accountingimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\service.arms\\services\\lawtrak\\accountingimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\service.arms\\services\\common\\apitokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\service.arms\\services\\common\\apitokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|c:\\users\\gokulkothapally\\source\\armsarchiving\\archivingtool\\service.arms\\services\\common\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E9AEC7-6B08-4C1B-9918-E54DC46F361A}|ArchivingTool\\ArchivingTool.csproj|solutionrelative:archivingtool\\service.arms\\services\\common\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingImportService.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\LawTrak\\BookingImportService.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Service.Arms\\Services\\LawTrak\\BookingImportService.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\LawTrak\\BookingImportService.cs",
+              "RelativeToolTip": "ArchivingTool\\Service.Arms\\Services\\LawTrak\\BookingImportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T15:59:17.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WarrantImportService.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\LawTrak\\WarrantImportService.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Service.Arms\\Services\\LawTrak\\WarrantImportService.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\LawTrak\\WarrantImportService.cs",
+              "RelativeToolTip": "ArchivingTool\\Service.Arms\\Services\\LawTrak\\WarrantImportService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:52:16.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApiTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\Common\\ApiTokenService.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Service.Arms\\Services\\Common\\ApiTokenService.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\Common\\ApiTokenService.cs",
+              "RelativeToolTip": "ArchivingTool\\Service.Arms\\Services\\Common\\ApiTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:51:15.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CitationImportService.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\LawTrak\\CitationImportService.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Service.Arms\\Services\\LawTrak\\CitationImportService.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\LawTrak\\CitationImportService.cs",
+              "RelativeToolTip": "ArchivingTool\\Service.Arms\\Services\\LawTrak\\CitationImportService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwC4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T18:22:58.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExportService.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\Common\\ExportService.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Service.Arms\\Services\\Common\\ExportService.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\Common\\ExportService.cs",
+              "RelativeToolTip": "ArchivingTool\\Service.Arms\\Services\\Common\\ExportService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:29:56.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AttachmentService.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\Common\\AttachmentService.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Service.Arms\\Services\\Common\\AttachmentService.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\Common\\AttachmentService.cs",
+              "RelativeToolTip": "ArchivingTool\\Service.Arms\\Services\\Common\\AttachmentService.cs",
+              "ViewState": "AgIAAFEAAAAAYGZmZmYjwKkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:08:26.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Form1.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Form1.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Form1.cs",
+              "RelativeToolTip": "ArchivingTool\\Form1.cs",
+              "ViewState": "AgIAAK8GAAAAAAAAAAAAAMEGAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T14:45:46.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Form1.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Form1.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Form1.cs [Design]",
+              "RelativeToolTip": "ArchivingTool\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T18:27:11.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Form1.Designer.cs",
+              "RelativeToolTip": "ArchivingTool\\Form1.Designer.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAAAN8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T16:35:42.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountingImportService.cs",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\LawTrak\\AccountingImportService.cs",
+              "RelativeDocumentMoniker": "ArchivingTool\\Service.Arms\\Services\\LawTrak\\AccountingImportService.cs",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\Service.Arms\\Services\\LawTrak\\AccountingImportService.cs",
+              "RelativeToolTip": "ArchivingTool\\Service.Arms\\Services\\LawTrak\\AccountingImportService.cs",
+              "ViewState": "AgIAAA4AAADg/////983wBkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:53:29.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\appsettings.json",
+              "RelativeDocumentMoniker": "ArchivingTool\\appsettings.json",
+              "ToolTip": "C:\\Users\\GokulKothapally\\source\\ArmsArchiving\\ArchivingTool\\appsettings.json",
+              "RelativeToolTip": "ArchivingTool\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-19T13:26:31.983Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
