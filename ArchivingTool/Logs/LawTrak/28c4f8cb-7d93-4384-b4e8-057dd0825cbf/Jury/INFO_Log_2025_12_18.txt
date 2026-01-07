@@ -1,0 +1,10 @@
+2025-12-18 10:55:00 [INFO]  Executing: sp_Jury_Master_Mapped
+2025-12-18 10:57:32 [INFO]  Executing: sp_Jury_Master_Mapped
+2025-12-18 10:57:32 [INFO]  -------------------
+2025-12-18 10:57:32 [INFO]  Batch 0
+2025-12-18 10:57:32 [INFO]  -------------------
+2025-12-18 11:04:19 [INFO]  Insertion FAILED for Jury IDC ID REG_NO-0000002_2416: InternalServerError - REG_NO-0000002_2416: InternalServerError - The SSL connection could not be established, see inner exception.
+2025-12-18 11:08:30 [INFO]  Insertion FAILED for Jury IDC ID REG_NO-0000001_1454: InternalServerError - REG_NO-0000001_1454: InternalServerError - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (dataportdev.arms.app:443)
+2025-12-18 11:12:49 [INFO]  Insertion FAILED for Jury IDC ID REG_NO-0000003_1522: InternalServerError - REG_NO-0000003_1522: InternalServerError - The SSL connection could not be established, see inner exception.
+2025-12-18 11:17:00 [INFO]  Insertion FAILED for Jury IDC ID REG_NO-0000006_1441: InternalServerError - REG_NO-0000006_1441: InternalServerError - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (dataportdev.arms.app:443)
+2025-12-18 11:18:29 [INFO]  Insertion FAILED for Jury IDC ID REG_NO-0000007_432: InternalServerError - REG_NO-0000007_432: InternalServerError - The SSL connection could not be established, see inner exception.

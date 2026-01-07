@@ -23,16 +23,22 @@ namespace ArchivingTool
             btnLawTrakBrowse = new Button();
             txtLTFolderPath = new TextBox();
             gbLawTrak_Modules = new GroupBox();
-            progressBarLawTrak = new ProgressBar();
-            btnLawTrak_Migration = new Button();
-            cbCases_LawTrak = new CheckBox();
-            cbCitations_LawTrak = new CheckBox();
-            cbWarrants_LawTrak = new CheckBox();
+            cbPropertyCheck_LawTrak = new CheckBox();
+            cbSubpoena_LawTrak = new CheckBox();
+            cbSummons_LawTrak = new CheckBox();
+            cbSCReceipts_LawTrak = new CheckBox();
+            cbPersonnel_LawTrak = new CheckBox();
+            cbJury_LawTrak = new CheckBox();
             cbBookings_LawTrak = new CheckBox();
             cbJuvenile_LawTrak = new CheckBox();
             cbAccounting_LawTrak = new CheckBox();
             cbEvidences_LawTrak = new CheckBox();
             cbAffidavits_LawTrak = new CheckBox();
+            progressBarLawTrak = new ProgressBar();
+            cbCases_LawTrak = new CheckBox();
+            btnLawTrak_Migration = new Button();
+            cbCitations_LawTrak = new CheckBox();
+            cbWarrants_LawTrak = new CheckBox();
             gbLawTrak_SQL_Conn = new GroupBox();
             btnLawTrak_Reset = new Button();
             txtSqlServer_LawTrak = new TextBox();
@@ -70,6 +76,14 @@ namespace ArchivingTool
             btnSqlConnect_Badge = new Button();
             lblSqlStatus_Badge = new Label();
             gbBadge_Modules = new GroupBox();
+            cbTrafficStop_Badge = new CheckBox();
+            cbProperty_Badge = new CheckBox();
+            cbMasterVehicle_Badge = new CheckBox();
+            cbMasterPerson_Badge = new CheckBox();
+            cbAlarm_Badge = new CheckBox();
+            cbBusiness_Badge = new CheckBox();
+            cbArrest_Badge = new CheckBox();
+            cbFieldInterview_Badge = new CheckBox();
             progressBarBadge = new ProgressBar();
             cbCalls_Badge = new CheckBox();
             cbCases_Badge = new CheckBox();
@@ -81,7 +95,7 @@ namespace ArchivingTool
             btnGenerateToken = new Button();
             lblApiStatus = new Label();
             grpApiAuth = new GroupBox();
-            folderBrowserDialog1 = new FolderBrowserDialog();    
+            folderBrowserDialog1 = new FolderBrowserDialog();
             tabControl.SuspendLayout();
             tabLawTrak.SuspendLayout();
             gbLawTrak_Folder.SuspendLayout();
@@ -106,7 +120,7 @@ namespace ArchivingTool
             tabControl.Margin = new Padding(4);
             tabControl.Name = "tabControl";
             tabControl.SelectedIndex = 0;
-            tabControl.Size = new Size(950, 830);
+            tabControl.Size = new Size(950, 1028);
             tabControl.TabIndex = 0;
             // 
             // tabLawTrak
@@ -118,10 +132,9 @@ namespace ArchivingTool
             tabLawTrak.Location = new Point(4, 34);
             tabLawTrak.Margin = new Padding(4);
             tabLawTrak.Name = "tabLawTrak";
-            tabLawTrak.Size = new Size(942, 792);
+            tabLawTrak.Size = new Size(942, 990);
             tabLawTrak.TabIndex = 0;
             tabLawTrak.Text = "LawTrak";
-            tabLawTrak.Click += TabLawTrak_Click;
             // 
             // gbLawTrak_Folder
             // 
@@ -134,13 +147,12 @@ namespace ArchivingTool
             gbLawTrak_Folder.TabIndex = 16;
             gbLawTrak_Folder.TabStop = false;
             gbLawTrak_Folder.Text = "Browse Attachments Folder";
-            gbLawTrak_Folder.Enter += gbLawTrak_Folder_Enter;
             // 
             // btnLawTrakBrowse
             // 
             btnLawTrakBrowse.Location = new Point(747, 62);
             btnLawTrakBrowse.Name = "btnLawTrakBrowse";
-            btnLawTrakBrowse.Size = new Size(146, 34);
+            btnLawTrakBrowse.Size = new Size(146, 44);
             btnLawTrakBrowse.TabIndex = 14;
             btnLawTrakBrowse.Text = "Browse…";
             btnLawTrakBrowse.UseVisualStyleBackColor = true;
@@ -152,10 +164,15 @@ namespace ArchivingTool
             txtLTFolderPath.Name = "txtLTFolderPath";
             txtLTFolderPath.Size = new Size(677, 34);
             txtLTFolderPath.TabIndex = 15;
-            txtLTFolderPath.TextChanged += txtLTFolderPath_TextChanged;
             // 
             // gbLawTrak_Modules
             // 
+            gbLawTrak_Modules.Controls.Add(cbPropertyCheck_LawTrak);
+            gbLawTrak_Modules.Controls.Add(cbSubpoena_LawTrak);
+            gbLawTrak_Modules.Controls.Add(cbSummons_LawTrak);
+            gbLawTrak_Modules.Controls.Add(cbSCReceipts_LawTrak);
+            gbLawTrak_Modules.Controls.Add(cbPersonnel_LawTrak);
+            gbLawTrak_Modules.Controls.Add(cbJury_LawTrak);
             gbLawTrak_Modules.Controls.Add(cbBookings_LawTrak);
             gbLawTrak_Modules.Controls.Add(cbJuvenile_LawTrak);
             gbLawTrak_Modules.Controls.Add(cbAccounting_LawTrak);
@@ -169,28 +186,146 @@ namespace ArchivingTool
             gbLawTrak_Modules.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             gbLawTrak_Modules.Location = new Point(8, 483);
             gbLawTrak_Modules.Name = "gbLawTrak_Modules";
-            gbLawTrak_Modules.Size = new Size(920, 223);
+            gbLawTrak_Modules.Size = new Size(920, 416);
             gbLawTrak_Modules.TabIndex = 13;
             gbLawTrak_Modules.TabStop = false;
             gbLawTrak_Modules.Text = "Modules";
-            gbLawTrak_Modules.Enter += gbLawTrak_Modules_Enter;
+            // 
+            // cbPropertyCheck_LawTrak
+            // 
+            cbPropertyCheck_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbPropertyCheck_LawTrak.Location = new Point(615, 149);
+            cbPropertyCheck_LawTrak.Margin = new Padding(4);
+            cbPropertyCheck_LawTrak.Name = "cbPropertyCheck_LawTrak";
+            cbPropertyCheck_LawTrak.Size = new Size(176, 56);
+            cbPropertyCheck_LawTrak.TabIndex = 33;
+            cbPropertyCheck_LawTrak.Text = "PropertyCheck";
+            // 
+            // cbSubpoena_LawTrak
+            // 
+            cbSubpoena_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbSubpoena_LawTrak.Location = new Point(459, 93);
+            cbSubpoena_LawTrak.Margin = new Padding(4);
+            cbSubpoena_LawTrak.Name = "cbSubpoena_LawTrak";
+            cbSubpoena_LawTrak.Size = new Size(148, 56);
+            cbSubpoena_LawTrak.TabIndex = 32;
+            cbSubpoena_LawTrak.Text = "Subpoena";
+            // 
+            // cbSummons_LawTrak
+            // 
+            cbSummons_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbSummons_LawTrak.Location = new Point(459, 149);
+            cbSummons_LawTrak.Margin = new Padding(4);
+            cbSummons_LawTrak.Name = "cbSummons_LawTrak";
+            cbSummons_LawTrak.Size = new Size(148, 56);
+            cbSummons_LawTrak.TabIndex = 31;
+            cbSummons_LawTrak.Text = "Summons";
+            // 
+            // cbSCReceipts_LawTrak
+            // 
+            cbSCReceipts_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbSCReceipts_LawTrak.Location = new Point(459, 37);
+            cbSCReceipts_LawTrak.Margin = new Padding(4);
+            cbSCReceipts_LawTrak.Name = "cbSCReceipts_LawTrak";
+            cbSCReceipts_LawTrak.Size = new Size(148, 56);
+            cbSCReceipts_LawTrak.TabIndex = 30;
+            cbSCReceipts_LawTrak.Text = "SC Receipts";
+            // 
+            // cbPersonnel_LawTrak
+            // 
+            cbPersonnel_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbPersonnel_LawTrak.Location = new Point(615, 37);
+            cbPersonnel_LawTrak.Margin = new Padding(4);
+            cbPersonnel_LawTrak.Name = "cbPersonnel_LawTrak";
+            cbPersonnel_LawTrak.Size = new Size(148, 56);
+            cbPersonnel_LawTrak.TabIndex = 29;
+            cbPersonnel_LawTrak.Text = "Personnel";
+            // 
+            // cbJury_LawTrak
+            // 
+            cbJury_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbJury_LawTrak.Location = new Point(318, 149);
+            cbJury_LawTrak.Margin = new Padding(4);
+            cbJury_LawTrak.Name = "cbJury_LawTrak";
+            cbJury_LawTrak.Size = new Size(148, 56);
+            cbJury_LawTrak.TabIndex = 28;
+            cbJury_LawTrak.Text = "Jury";
+            // 
+            // cbBookings_LawTrak
+            // 
+            cbBookings_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbBookings_LawTrak.Location = new Point(160, 149);
+            cbBookings_LawTrak.Margin = new Padding(4);
+            cbBookings_LawTrak.Name = "cbBookings_LawTrak";
+            cbBookings_LawTrak.Size = new Size(129, 56);
+            cbBookings_LawTrak.TabIndex = 27;
+            cbBookings_LawTrak.Text = "Bookings";
+            // 
+            // cbJuvenile_LawTrak
+            // 
+            cbJuvenile_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbJuvenile_LawTrak.Location = new Point(17, 149);
+            cbJuvenile_LawTrak.Margin = new Padding(4);
+            cbJuvenile_LawTrak.Name = "cbJuvenile_LawTrak";
+            cbJuvenile_LawTrak.Size = new Size(148, 56);
+            cbJuvenile_LawTrak.TabIndex = 26;
+            cbJuvenile_LawTrak.Text = "Juveniles";
+            // 
+            // cbAccounting_LawTrak
+            // 
+            cbAccounting_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbAccounting_LawTrak.Location = new Point(319, 93);
+            cbAccounting_LawTrak.Margin = new Padding(4);
+            cbAccounting_LawTrak.Name = "cbAccounting_LawTrak";
+            cbAccounting_LawTrak.Size = new Size(148, 56);
+            cbAccounting_LawTrak.TabIndex = 25;
+            cbAccounting_LawTrak.Text = "Accounting";
+            // 
+            // cbEvidences_LawTrak
+            // 
+            cbEvidences_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbEvidences_LawTrak.Location = new Point(160, 93);
+            cbEvidences_LawTrak.Margin = new Padding(4);
+            cbEvidences_LawTrak.Name = "cbEvidences_LawTrak";
+            cbEvidences_LawTrak.Size = new Size(129, 56);
+            cbEvidences_LawTrak.TabIndex = 24;
+            cbEvidences_LawTrak.Text = "Evidences";
+            // 
+            // cbAffidavits_LawTrak
+            // 
+            cbAffidavits_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbAffidavits_LawTrak.Location = new Point(16, 93);
+            cbAffidavits_LawTrak.Margin = new Padding(4);
+            cbAffidavits_LawTrak.Name = "cbAffidavits_LawTrak";
+            cbAffidavits_LawTrak.Size = new Size(122, 56);
+            cbAffidavits_LawTrak.TabIndex = 23;
+            cbAffidavits_LawTrak.Text = "Affidavits";
             // 
             // progressBarLawTrak
             // 
-            progressBarLawTrak.Location = new Point(532, 139);
+            progressBarLawTrak.Location = new Point(380, 308);
             progressBarLawTrak.Margin = new Padding(4, 5, 4, 5);
             progressBarLawTrak.Name = "progressBarLawTrak";
             progressBarLawTrak.Size = new Size(353, 48);
             progressBarLawTrak.TabIndex = 22;
             progressBarLawTrak.Visible = false;
-            progressBarLawTrak.Click += progressBar1_Click;
+            // 
+            // cbCases_LawTrak
+            // 
+            cbCases_LawTrak.Font = new Font("Segoe UI", 10F);
+            cbCases_LawTrak.Location = new Point(318, 37);
+            cbCases_LawTrak.Margin = new Padding(4);
+            cbCases_LawTrak.Name = "cbCases_LawTrak";
+            cbCases_LawTrak.Size = new Size(100, 56);
+            cbCases_LawTrak.TabIndex = 21;
+            cbCases_LawTrak.Text = "Cases";
             // 
             // btnLawTrak_Migration
             // 
             btnLawTrak_Migration.Font = new Font("Segoe UI", 10F);
-            btnLawTrak_Migration.Location = new Point(650, 90);
+            btnLawTrak_Migration.Location = new Point(151, 303);
             btnLawTrak_Migration.Name = "btnLawTrak_Migration";
-            btnLawTrak_Migration.Size = new Size(125, 41);
+            btnLawTrak_Migration.Size = new Size(125, 53);
             btnLawTrak_Migration.TabIndex = 13;
             btnLawTrak_Migration.Text = "Migrate";
             btnLawTrak_Migration.UseVisualStyleBackColor = true;
@@ -209,73 +344,12 @@ namespace ArchivingTool
             // cbWarrants_LawTrak
             // 
             cbWarrants_LawTrak.Font = new Font("Segoe UI", 10F);
-            cbWarrants_LawTrak.Location = new Point(147, 48);
+            cbWarrants_LawTrak.Location = new Point(160, 48);
             cbWarrants_LawTrak.Margin = new Padding(4);
             cbWarrants_LawTrak.Name = "cbWarrants_LawTrak";
             cbWarrants_LawTrak.Size = new Size(116, 35);
             cbWarrants_LawTrak.TabIndex = 12;
             cbWarrants_LawTrak.Text = "Warrants";
-            // 
-            // cbCases_LawTrak
-            // 
-            cbCases_LawTrak.Font = new Font("Segoe UI", 10F);
-            cbCases_LawTrak.Location = new Point(284, 37);
-            cbCases_LawTrak.Margin = new Padding(4);
-            cbCases_LawTrak.Name = "cbCases_LawTrak";
-            cbCases_LawTrak.Size = new Size(100, 56);
-            cbCases_LawTrak.TabIndex = 21;
-            cbCases_LawTrak.Text = "Cases";
-            cbCases_LawTrak.CheckedChanged += cbCases_LawTrak_CheckedChanged;
-            // 
-            // cbJuvenile_LawTrak
-            // 
-            cbJuvenile_LawTrak.Font = new Font("Segoe UI", 10F);
-            cbJuvenile_LawTrak.Location = new Point(17, 139);
-            cbJuvenile_LawTrak.Margin = new Padding(4);
-            cbJuvenile_LawTrak.Name = "cbJuvenile_LawTrak";
-            cbJuvenile_LawTrak.Size = new Size(148, 56);
-            cbJuvenile_LawTrak.TabIndex = 26;
-            cbJuvenile_LawTrak.Text = "Juveniles";
-            // 
-            // cbAccounting_LawTrak
-            // 
-            cbAccounting_LawTrak.Font = new Font("Segoe UI", 10F);
-            cbAccounting_LawTrak.Location = new Point(284, 90);
-            cbAccounting_LawTrak.Margin = new Padding(4);
-            cbAccounting_LawTrak.Name = "cbAccounting_LawTrak";
-            cbAccounting_LawTrak.Size = new Size(148, 56);
-            cbAccounting_LawTrak.TabIndex = 25;
-            cbAccounting_LawTrak.Text = "Accounting";
-            // 
-            // cbEvidences_LawTrak
-            // 
-            cbEvidences_LawTrak.Font = new Font("Segoe UI", 10F);
-            cbEvidences_LawTrak.Location = new Point(147, 91);
-            cbEvidences_LawTrak.Margin = new Padding(4);
-            cbEvidences_LawTrak.Name = "cbEvidences_LawTrak";
-            cbEvidences_LawTrak.Size = new Size(129, 56);
-            cbEvidences_LawTrak.TabIndex = 24;
-            cbEvidences_LawTrak.Text = "Evidences";
-            // 
-            // cbAffidavits_LawTrak
-            // 
-            cbAffidavits_LawTrak.Font = new Font("Segoe UI", 10F);
-            cbAffidavits_LawTrak.Location = new Point(16, 90);
-            cbAffidavits_LawTrak.Margin = new Padding(4);
-            cbAffidavits_LawTrak.Name = "cbAffidavits_LawTrak";
-            cbAffidavits_LawTrak.Size = new Size(122, 56);
-            cbAffidavits_LawTrak.TabIndex = 23;
-            cbAffidavits_LawTrak.Text = "Affidavits";
-            // 
-            // cbBookings_LawTrak
-            // 
-            cbBookings_LawTrak.Font = new Font("Segoe UI", 10F);
-            cbBookings_LawTrak.Location = new Point(147, 139);
-            cbBookings_LawTrak.Margin = new Padding(4);
-            cbBookings_LawTrak.Name = "cbBookings_LawTrak";
-            cbBookings_LawTrak.Size = new Size(129, 56);
-            cbBookings_LawTrak.TabIndex = 27;
-            cbBookings_LawTrak.Text = "Bookings";
             // 
             // gbLawTrak_SQL_Conn
             // 
@@ -294,7 +368,6 @@ namespace ArchivingTool
             gbLawTrak_SQL_Conn.TabIndex = 12;
             gbLawTrak_SQL_Conn.TabStop = false;
             gbLawTrak_SQL_Conn.Text = "SQL Connection";
-            gbLawTrak_SQL_Conn.Enter += LawTrak_SQL_Connection_Enter;
             // 
             // btnLawTrak_Reset
             // 
@@ -386,7 +459,7 @@ namespace ArchivingTool
             tabInSynch.Location = new Point(4, 34);
             tabInSynch.Margin = new Padding(4);
             tabInSynch.Name = "tabInSynch";
-            tabInSynch.Size = new Size(942, 792);
+            tabInSynch.Size = new Size(942, 990);
             tabInSynch.TabIndex = 1;
             tabInSynch.Text = "In-Synch";
             // 
@@ -403,7 +476,6 @@ namespace ArchivingTool
             gbInSynch_Modules.TabIndex = 10;
             gbInSynch_Modules.TabStop = false;
             gbInSynch_Modules.Text = "Modules";
-            gbInSynch_Modules.Enter += gbInSynch_Modules_Enter;
             // 
             // progressBarInSynch
             // 
@@ -413,7 +485,6 @@ namespace ArchivingTool
             progressBarInSynch.Size = new Size(353, 48);
             progressBarInSynch.TabIndex = 23;
             progressBarInSynch.Visible = false;
-            progressBarInSynch.Click += progressBar2_Click;
             // 
             // btnInSynch_Migration
             // 
@@ -462,7 +533,6 @@ namespace ArchivingTool
             gbInSynch_SQL_Conn.TabIndex = 9;
             gbInSynch_SQL_Conn.TabStop = false;
             gbInSynch_SQL_Conn.Text = "SQL Connection";
-            gbInSynch_SQL_Conn.Enter += InSynch_SQL_Connection_Enter;
             // 
             // btnInSynch_Reset
             // 
@@ -484,7 +554,6 @@ namespace ArchivingTool
             txtSqlServer_InSynch.PlaceholderText = "SQL Server";
             txtSqlServer_InSynch.Size = new Size(249, 34);
             txtSqlServer_InSynch.TabIndex = 7;
-            txtSqlServer_InSynch.TextChanged += txtSqlServer_InSynch_TextChanged;
             // 
             // txtSqlDb_InSynch
             // 
@@ -536,7 +605,6 @@ namespace ArchivingTool
             lblSqlStatus_InSynch.Name = "lblSqlStatus_InSynch";
             lblSqlStatus_InSynch.Size = new Size(250, 25);
             lblSqlStatus_InSynch.TabIndex = 13;
-            lblSqlStatus_InSynch.Click += LblSqlStatus_InSynch_Click;
             // 
             // tabBadge
             // 
@@ -546,7 +614,7 @@ namespace ArchivingTool
             tabBadge.Location = new Point(4, 34);
             tabBadge.Name = "tabBadge";
             tabBadge.Padding = new Padding(3);
-            tabBadge.Size = new Size(942, 792);
+            tabBadge.Size = new Size(942, 990);
             tabBadge.TabIndex = 2;
             tabBadge.Text = "Badge";
             tabBadge.UseVisualStyleBackColor = true;
@@ -562,7 +630,6 @@ namespace ArchivingTool
             gbBadge_Folder.TabIndex = 19;
             gbBadge_Folder.TabStop = false;
             gbBadge_Folder.Text = "Browse Attachments Folder";
-            gbBadge_Folder.Enter += gbBadge_Folder_Enter;
             // 
             // btnBadgeBrowse
             // 
@@ -572,6 +639,7 @@ namespace ArchivingTool
             btnBadgeBrowse.TabIndex = 14;
             btnBadgeBrowse.Text = "Browse…";
             btnBadgeBrowse.UseVisualStyleBackColor = true;
+            btnBadgeBrowse.Click += btnBrowse_Click;
             // 
             // txtBadgeFolderPath
             // 
@@ -579,7 +647,6 @@ namespace ArchivingTool
             txtBadgeFolderPath.Name = "txtBadgeFolderPath";
             txtBadgeFolderPath.Size = new Size(677, 31);
             txtBadgeFolderPath.TabIndex = 15;
-            txtBadgeFolderPath.TextChanged += txtBadgeFolderPath_TextChanged;
             // 
             // gbBadge_SQL_Conn
             // 
@@ -598,7 +665,6 @@ namespace ArchivingTool
             gbBadge_SQL_Conn.TabIndex = 17;
             gbBadge_SQL_Conn.TabStop = false;
             gbBadge_SQL_Conn.Text = "SQL Connection";
-            gbBadge_SQL_Conn.Enter += Badge_SQL_Connection_Enter;
             // 
             // btnBadge_Reset
             // 
@@ -684,6 +750,14 @@ namespace ArchivingTool
             // 
             // gbBadge_Modules
             // 
+            gbBadge_Modules.Controls.Add(cbTrafficStop_Badge);
+            gbBadge_Modules.Controls.Add(cbProperty_Badge);
+            gbBadge_Modules.Controls.Add(cbMasterVehicle_Badge);
+            gbBadge_Modules.Controls.Add(cbMasterPerson_Badge);
+            gbBadge_Modules.Controls.Add(cbAlarm_Badge);
+            gbBadge_Modules.Controls.Add(cbBusiness_Badge);
+            gbBadge_Modules.Controls.Add(cbArrest_Badge);
+            gbBadge_Modules.Controls.Add(cbFieldInterview_Badge);
             gbBadge_Modules.Controls.Add(progressBarBadge);
             gbBadge_Modules.Controls.Add(cbCalls_Badge);
             gbBadge_Modules.Controls.Add(cbCases_Badge);
@@ -693,26 +767,104 @@ namespace ArchivingTool
             gbBadge_Modules.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             gbBadge_Modules.Location = new Point(11, 445);
             gbBadge_Modules.Name = "gbBadge_Modules";
-            gbBadge_Modules.Size = new Size(920, 223);
+            gbBadge_Modules.Size = new Size(920, 426);
             gbBadge_Modules.TabIndex = 18;
             gbBadge_Modules.TabStop = false;
             gbBadge_Modules.Text = "Modules";
-            gbBadge_Modules.Enter += Badge_Modules_Enter;
+            // 
+            // cbTrafficStop_Badge
+            // 
+            cbTrafficStop_Badge.Font = new Font("Segoe UI", 10F);
+            cbTrafficStop_Badge.Location = new Point(505, 177);
+            cbTrafficStop_Badge.Margin = new Padding(4);
+            cbTrafficStop_Badge.Name = "cbTrafficStop_Badge";
+            cbTrafficStop_Badge.Size = new Size(175, 56);
+            cbTrafficStop_Badge.TabIndex = 31;
+            cbTrafficStop_Badge.Text = "Traffic Stop";
+            // 
+            // cbProperty_Badge
+            // 
+            cbProperty_Badge.Font = new Font("Segoe UI", 10F);
+            cbProperty_Badge.Location = new Point(505, 113);
+            cbProperty_Badge.Margin = new Padding(4);
+            cbProperty_Badge.Name = "cbProperty_Badge";
+            cbProperty_Badge.Size = new Size(114, 56);
+            cbProperty_Badge.TabIndex = 30;
+            cbProperty_Badge.Text = "Property";
+            // 
+            // cbMasterVehicle_Badge
+            // 
+            cbMasterVehicle_Badge.Font = new Font("Segoe UI", 10F);
+            cbMasterVehicle_Badge.Location = new Point(320, 177);
+            cbMasterVehicle_Badge.Margin = new Padding(4);
+            cbMasterVehicle_Badge.Name = "cbMasterVehicle_Badge";
+            cbMasterVehicle_Badge.Size = new Size(175, 56);
+            cbMasterVehicle_Badge.TabIndex = 29;
+            cbMasterVehicle_Badge.Text = "Master Vehicle";
+            // 
+            // cbMasterPerson_Badge
+            // 
+            cbMasterPerson_Badge.Font = new Font("Segoe UI", 10F);
+            cbMasterPerson_Badge.Location = new Point(320, 113);
+            cbMasterPerson_Badge.Margin = new Padding(4);
+            cbMasterPerson_Badge.Name = "cbMasterPerson_Badge";
+            cbMasterPerson_Badge.Size = new Size(175, 56);
+            cbMasterPerson_Badge.TabIndex = 28;
+            cbMasterPerson_Badge.Text = "Master Person";
+            // 
+            // cbAlarm_Badge
+            // 
+            cbAlarm_Badge.Font = new Font("Segoe UI", 10F);
+            cbAlarm_Badge.Location = new Point(25, 113);
+            cbAlarm_Badge.Margin = new Padding(4);
+            cbAlarm_Badge.Name = "cbAlarm_Badge";
+            cbAlarm_Badge.Size = new Size(100, 56);
+            cbAlarm_Badge.TabIndex = 27;
+            cbAlarm_Badge.Text = "Alarm";
+            // 
+            // cbBusiness_Badge
+            // 
+            cbBusiness_Badge.Font = new Font("Segoe UI", 10F);
+            cbBusiness_Badge.Location = new Point(25, 177);
+            cbBusiness_Badge.Margin = new Padding(4);
+            cbBusiness_Badge.Name = "cbBusiness_Badge";
+            cbBusiness_Badge.Size = new Size(114, 56);
+            cbBusiness_Badge.TabIndex = 26;
+            cbBusiness_Badge.Text = "Business";
+            // 
+            // cbArrest_Badge
+            // 
+            cbArrest_Badge.Font = new Font("Segoe UI", 10F);
+            cbArrest_Badge.Location = new Point(147, 113);
+            cbArrest_Badge.Margin = new Padding(4);
+            cbArrest_Badge.Name = "cbArrest_Badge";
+            cbArrest_Badge.Size = new Size(100, 56);
+            cbArrest_Badge.TabIndex = 25;
+            cbArrest_Badge.Text = "Arrest";
+            // 
+            // cbFieldInterview_Badge
+            // 
+            cbFieldInterview_Badge.Font = new Font("Segoe UI", 10F);
+            cbFieldInterview_Badge.Location = new Point(147, 177);
+            cbFieldInterview_Badge.Margin = new Padding(4);
+            cbFieldInterview_Badge.Name = "cbFieldInterview_Badge";
+            cbFieldInterview_Badge.Size = new Size(175, 56);
+            cbFieldInterview_Badge.TabIndex = 24;
+            cbFieldInterview_Badge.Text = "Field Interview";
             // 
             // progressBarBadge
             // 
-            progressBarBadge.Location = new Point(532, 139);
+            progressBarBadge.Location = new Point(533, 328);
             progressBarBadge.Margin = new Padding(4, 5, 4, 5);
             progressBarBadge.Name = "progressBarBadge";
             progressBarBadge.Size = new Size(353, 48);
             progressBarBadge.TabIndex = 22;
             progressBarBadge.Visible = false;
-            progressBarBadge.Click += progressBar3_Click;
             // 
             // cbCalls_Badge
             // 
             cbCalls_Badge.Font = new Font("Segoe UI", 10F);
-            cbCalls_Badge.Location = new Point(17, 101);
+            cbCalls_Badge.Location = new Point(505, 49);
             cbCalls_Badge.Margin = new Padding(4);
             cbCalls_Badge.Name = "cbCalls_Badge";
             cbCalls_Badge.Size = new Size(100, 56);
@@ -722,7 +874,7 @@ namespace ArchivingTool
             // cbCases_Badge
             // 
             cbCases_Badge.Font = new Font("Segoe UI", 10F);
-            cbCases_Badge.Location = new Point(271, 37);
+            cbCases_Badge.Location = new Point(320, 49);
             cbCases_Badge.Margin = new Padding(4);
             cbCases_Badge.Name = "cbCases_Badge";
             cbCases_Badge.Size = new Size(100, 56);
@@ -732,7 +884,7 @@ namespace ArchivingTool
             // cbCitations_Badge
             // 
             cbCitations_Badge.Font = new Font("Segoe UI", 10F);
-            cbCitations_Badge.Location = new Point(17, 37);
+            cbCitations_Badge.Location = new Point(25, 49);
             cbCitations_Badge.Margin = new Padding(4);
             cbCitations_Badge.Name = "cbCitations_Badge";
             cbCitations_Badge.Size = new Size(122, 56);
@@ -742,7 +894,7 @@ namespace ArchivingTool
             // cbWarrants_Badge
             // 
             cbWarrants_Badge.Font = new Font("Segoe UI", 10F);
-            cbWarrants_Badge.Location = new Point(147, 48);
+            cbWarrants_Badge.Location = new Point(147, 58);
             cbWarrants_Badge.Margin = new Padding(4);
             cbWarrants_Badge.Name = "cbWarrants_Badge";
             cbWarrants_Badge.Size = new Size(116, 35);
@@ -752,7 +904,7 @@ namespace ArchivingTool
             // btnBadge_Migration
             // 
             btnBadge_Migration.Font = new Font("Segoe UI", 10F);
-            btnBadge_Migration.Location = new Point(650, 90);
+            btnBadge_Migration.Location = new Point(107, 335);
             btnBadge_Migration.Name = "btnBadge_Migration";
             btnBadge_Migration.Size = new Size(125, 41);
             btnBadge_Migration.TabIndex = 13;
@@ -799,7 +951,6 @@ namespace ArchivingTool
             lblApiStatus.Name = "lblApiStatus";
             lblApiStatus.Size = new Size(341, 80);
             lblApiStatus.TabIndex = 4;
-            lblApiStatus.Click += lblApiStatus_Click_1;
             // 
             // grpApiAuth
             // 
@@ -814,13 +965,12 @@ namespace ArchivingTool
             grpApiAuth.TabIndex = 5;
             grpApiAuth.TabStop = false;
             grpApiAuth.Text = "API Authentication";
-            grpApiAuth.Enter += grpApiAuth_Enter;            
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1045, 1115);
+            ClientSize = new Size(978, 1273);
             Controls.Add(tabControl);
             Controls.Add(txtAgencyKey);
             Controls.Add(txtAgencyAPIKey);
@@ -881,6 +1031,12 @@ namespace ArchivingTool
         private CheckBox cbEvidences_LawTrak;
         private CheckBox cbAccounting_LawTrak;
         private CheckBox cbJuvenile_LawTrak;
+        private CheckBox cbBookings_LawTrak;
+        private CheckBox cbSummons_LawTrak;
+        private CheckBox cbSCReceipts_LawTrak;
+        private CheckBox cbPersonnel_LawTrak;
+        private CheckBox cbJury_LawTrak;
+        private CheckBox cbSubpoena_LawTrak;
         private ProgressBar progressBarLawTrak;
 
         // In-Synch Controls
@@ -923,6 +1079,14 @@ namespace ArchivingTool
         private ProgressBar progressBarBadge;
 
         private FolderBrowserDialog folderBrowserDialog1;
-        private CheckBox cbBookings_LawTrak;
+        private CheckBox cbPropertyCheck_LawTrak;
+        private CheckBox cbTrafficStop_Badge;
+        private CheckBox cbProperty_Badge;
+        private CheckBox cbMasterVehicle_Badge;
+        private CheckBox cbMasterPerson_Badge;
+        private CheckBox cbAlarm_Badge;
+        private CheckBox cbBusiness_Badge;
+        private CheckBox cbArrest_Badge;
+        private CheckBox cbFieldInterview_Badge;
     }
 }

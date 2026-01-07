@@ -1,0 +1,10 @@
+2025-12-05 08:40:53 [INFO]  Executing: sp_JuvenilePetitions_Mapped
+2025-12-05 08:40:53 [INFO]  -------------------
+2025-12-05 08:40:53 [INFO]  Juvenile Logs
+2025-12-05 08:40:53 [INFO]  Batch 0
+2025-12-05 08:40:53 [INFO]  -------------------
+2025-12-05 08:40:54 [INFO]  Executing: sp_JuvenileCompalints_Mapped
+2025-12-05 08:40:54 [INFO]  -------------------
+2025-12-05 08:40:54 [INFO]  Juvenile Logs
+2025-12-05 08:40:54 [INFO]  Batch 0
+2025-12-05 08:40:54 [INFO]  -------------------

@@ -15,10 +15,13 @@ namespace ArchivingTool.Service.Arms.Services.Common
     public class AttachmentService
     {
         private readonly HttpClientService _httpClientService;
-
-        public AttachmentService(HttpClientService httpClientService)
+        private readonly BlobUploadHelper _blobUploadHelper;
+        public AttachmentService(
+        HttpClientService httpClientService,
+        BlobUploadHelper blobUploadHelper)
         {
             _httpClientService = httpClientService;
+            _blobUploadHelper = blobUploadHelper;
         }
 
         /// <summary>
@@ -42,24 +45,28 @@ namespace ArchivingTool.Service.Arms.Services.Common
 
             CommonResponse<string> response = await _httpClientService.SendApiRequest<string>(requestModel);
 
-            if (response != null && response.Success && !string.IsNullOrEmpty(response.Data))
-                return response.Data;
+            if (response == null)
+                return null;
 
-            return null;
+            if (response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                throw new UnauthorizedAccessException("Unauthorized – API token invalid or expired.");
+            }
+
+            if (!response.Success)
+            {
+                throw new Exception($"Upload failed: {response.StatusCode} - {response.Message}");
+            }
+
+            return response.Data;
+
         }
 
         /// <summary>
         /// Recursively processing any JSON object and uploading attachments.
         /// </summary>
-        public async Task ProcessAttachmentsRecursiveAsync(
-    string apiToken,
-    string agencyKey,
-    string module,
-    string moduleNumber,
-    string baseFolderPath,
-    JToken token,
-    string currentPath = "",
-    string rms = "")
+        public async Task ProcessAttachmentsRecursiveAsync(string apiToken, string agencyKey, string module, string moduleNumber,
+    string baseFolderPath, JToken token, string currentPath = "", string rms = "")
         {
             if (token == null)
                 return;
@@ -69,7 +76,7 @@ namespace ArchivingTool.Service.Arms.Services.Common
             {
                 var attachments = token as JArray;
 
-                // 🔹 Precompute LawTrak subfolders (only if needed)
+                // Precompute LawTrak subfolders (only if needed)
                 string videosFolderPath = null;
                 string ltPicsFolderPath1 = null;
                 string ltPicsFolderPath2= null;
@@ -90,6 +97,8 @@ namespace ArchivingTool.Service.Arms.Services.Common
 
                     if (!string.IsNullOrEmpty(fileName))
                     {
+                        if (attachment["File"] != null)
+                            continue;
                         string targetFolder = baseFolderPath;
 
                         if (rms.Equals("LawTrak", StringComparison.OrdinalIgnoreCase))
@@ -109,15 +118,29 @@ namespace ArchivingTool.Service.Arms.Services.Common
 
                         string filePath = Path.Combine(targetFolder, fileName);
 
-                        if (File.Exists(filePath))
+                        if (!File.Exists(filePath))
                         {
-                            // Build logical path (module + case number + optional currentPath)
+                            Logger.Write(
+                                $"Attachment file NOT FOUND. Case={moduleNumber}, File={fileName}, Path={filePath}",
+                                rms,
+                                module,
+                                Guid.Parse(agencyKey),
+                                "WARN"
+                            );
+                            continue;
+                        }
+
+
+                        else
+                        {
+                            // Building logical path (module + case number + optional currentPath)
                             string logicalFolderPath = string.IsNullOrEmpty(currentPath)
                                 ? $"{module},{moduleNumber}"
                                 : $"{module},{moduleNumber},{currentPath.Replace('.', ',')}";
 
-                            string file = await UploadFileAsync(apiToken, agencyKey, logicalFolderPath, filePath);
-
+                            //string file = await UploadFileAsync(apiToken, agencyKey, logicalFolderPath, filePath);
+                            string blobFolderPath = BuildBlobFolderPath(agencyKey, module, moduleNumber);
+                            string file = await _blobUploadHelper.UploadAsync(filePath, blobFolderPath);
                             if (!string.IsNullOrEmpty(file))
                             {
                                 // Inject FileURL back into the attachment
@@ -177,6 +200,29 @@ namespace ArchivingTool.Service.Arms.Services.Common
 
 
         }
+
+        private string BuildBlobFolderPath(
+    string agencyKey,
+    string module,
+    string moduleNumber,
+    string currentPath = null)
+        {
+            var parts = new List<string>
+    {
+        agencyKey,
+        module,
+        moduleNumber
+    };
+
+            if (!string.IsNullOrWhiteSpace(currentPath))
+            {
+                // Convert JSON path style to folders
+                parts.Add(currentPath.Replace(".", "/"));
+            }
+
+            return string.Join("/", parts);
+        }
+
 
     }
 }

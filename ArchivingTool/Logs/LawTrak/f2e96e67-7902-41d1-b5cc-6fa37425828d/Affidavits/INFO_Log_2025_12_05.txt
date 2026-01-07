@@ -1,0 +1,11 @@
+2025-12-05 08:39:53 [INFO]  Executing: sp_Affidavit_CriminalWarrant_Mapped
+2025-12-05 08:39:53 [INFO]  -------------------
+2025-12-05 08:39:53 [INFO]  Affidavits Logs
+2025-12-05 08:39:53 [INFO]  Batch 0
+2025-12-05 08:39:53 [INFO]  -------------------
+2025-12-05 08:39:55 [INFO]  Executing: sp_Affidavit_PersonalS_Mapped
+2025-12-05 08:39:55 [INFO]  -------------------
+2025-12-05 08:39:55 [INFO]  Affidavits Logs
+2025-12-05 08:39:55 [INFO]  Batch 0
+2025-12-05 08:39:55 [INFO]  -------------------
+2025-12-05 08:40:00 [INFO]  Executing: sp_Affidavit_ProbableCause_Mapped

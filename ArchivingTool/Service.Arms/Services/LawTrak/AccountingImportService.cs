@@ -1,5 +1,4 @@
 ﻿using ArchivingTool.Model.Arms;
-using ArchivingTool.Models;
 using ArchivingTool.Service.Arms.Services.Common;
 using MongoDB.Bson;
 using Newtonsoft.Json.Linq;
@@ -14,32 +13,30 @@ namespace ArchivingTool.Service.Arms.Services.LawTrak
 {
     public class AccountingImportService
     {
-
+        private readonly BlobUploadHelper blobUploadHelper;
         private readonly HttpClientService _httpClientService;
 
         public AccountingImportService()
         {
+            blobUploadHelper = new BlobUploadHelper();
+
             _httpClientService = new HttpClientService();
         }
 
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
 ImportAccountingAsync(
     string apiToken,
-    Dictionary<string, object> accounting,
+    JObject accountingJson, 
+    string moduleNumber,
     Guid? historyId = null,
     string baseFolderPath = "",
     Guid agencyKey = default)
         {
-            if (accounting == null || accounting.Count == 0)
+            if (accountingJson == null || accountingJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
             var module = "Accounting";
-
-            var accountingJson = JObject.FromObject(accounting);
-
-            string accountingNumber = accountingJson["Document"]?["AccountingMonthlyData"]?["Accounting Date"]?.ToString() ?? "Unknown";
-
 
             try
             {
@@ -48,7 +45,7 @@ ImportAccountingAsync(
                     apiToken,
                     agencyKey.ToString(),
                     module,
-                    accountingNumber,
+                    moduleNumber,
                     baseFolderPath,
                     accountingJson,
                     "",
@@ -80,7 +77,7 @@ ImportAccountingAsync(
                 return (false, null, $"{accountingJson}: Exception - {ex.Message}");
             }
 
-            return (true, System.Net.HttpStatusCode.OK, null);
+            return (true, System.Net.HttpStatusCode.OK, string.Empty);
         }
 
     }

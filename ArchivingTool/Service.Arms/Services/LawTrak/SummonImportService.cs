@@ -1,5 +1,4 @@
 ﻿using ArchivingTool.Model.Arms;
-using ArchivingTool.Models;
 using ArchivingTool.Service.Arms.Services.Common;
 using MongoDB.Bson;
 using Newtonsoft.Json.Linq;
@@ -14,43 +13,23 @@ namespace ArchivingTool.Service.Arms.Services.LawTrak
 {
     public class SummonImportService
     {
-
+        private readonly BlobUploadHelper blobUploadHelper;
         private readonly HttpClientService _httpClientService;
 
         public SummonImportService()
         {
+            blobUploadHelper = new BlobUploadHelper();
             _httpClientService = new HttpClientService();
         }
 
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
-ImportSummonsAsync(
-    string apiToken,
-    Dictionary<string, object> summon,
-    Guid? historyId = null,
-    string baseFolderPath = "",
-    Guid agencyKey = default)
+ImportSummonAsync(string apiToken, JObject summonJson, string moduleNumber, Guid? historyId = null, string baseFolderPath = "", Guid agencyKey = default)
         {
-            if (summon == null || summon.Count == 0)
+            if (summonJson == null || summonJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
-            var module = "Citations";
-
-            var citationJson = JObject.FromObject(summon);
-
-            string citationType = citationJson["CitationsData"]?["Citation"]?.ToString() ?? "";
-
-            // deciding which field to use
-            string citationNumber;
-            if (citationType == "Warning Ticket")
-            {
-                citationNumber = citationJson["CitationsData"]?["Ticket Number"]?.ToString() ?? "Unknown";
-            }
-            else
-            {
-                citationNumber = citationJson["CitationsData"]?["Citation Number"]?.ToString() ?? "Unknown";
-            }
-
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
+            var module = "Summons";
 
             try
             {
@@ -59,19 +38,19 @@ ImportSummonsAsync(
                     apiToken,
                     agencyKey.ToString(),
                     module,
-                    citationNumber,
+                    moduleNumber,
                     baseFolderPath,
-                    citationJson,
+                    summonJson,
                     "",
                     "LawTrak"
                 );
 
-                var json = JsonConvert.SerializeObject(citationJson);
+                var json = JsonConvert.SerializeObject(summonJson);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var requestModel = new CommonRequestModel
                 {
-                    Endpoint = "Document/Citations",
+                    Endpoint = "Document/Summons",
                     RequestMethod = HttpMethod.Post,
                     RequestAuthMethod = Enums.AuthorizationMethod.Token,
                     ApiToken = apiToken,
@@ -81,17 +60,17 @@ ImportSummonsAsync(
                 var response = await _httpClientService.SendApiRequest<object>(requestModel);
 
                 if (response == null)
-                    return (false, null, $"{citationNumber}: No response from server");
+                    return (false, null, $"{moduleNumber}: No response from server");
 
                 if ((int)response.StatusCode < 200 || (int)response.StatusCode >= 300)
-                    return (false, response.StatusCode, $"{citationNumber}: {response.StatusCode} - {response.Message}");
+                    return (false, response.StatusCode, $"{moduleNumber}: {response.StatusCode} - {response.Message}");
             }
             catch (Exception ex)
             {
-                return (false, null, $"{citationNumber}: Exception - {ex.Message}");
+                return (false, null, $"{moduleNumber}: Exception - {ex.Message}");
             }
 
-            return (true, System.Net.HttpStatusCode.OK, null);
+            return (true, System.Net.HttpStatusCode.OK, string.Empty);
         }
 
 

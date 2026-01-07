@@ -1,5 +1,4 @@
 ﻿using ArchivingTool.Model.Arms;
-using ArchivingTool.Models;
 using ArchivingTool.Service.Arms.Services.Common;
 using MongoDB.Bson;
 using Newtonsoft.Json.Linq;
@@ -14,31 +13,30 @@ namespace ArchivingTool.Service.Arms.Services.LawTrak
 {
     public class AffidavitImportService
     {
-
+        private readonly BlobUploadHelper blobUploadHelper;
         private readonly HttpClientService _httpClientService;
 
         public AffidavitImportService()
         {
+            blobUploadHelper = new BlobUploadHelper();
+
             _httpClientService = new HttpClientService();
         }
 
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
 ImportAffidavitsAsync(
     string apiToken,
-    Dictionary<string, object> affidavit,
+    JObject affidavitJson,
+    string moduleNumber,
     Guid? historyId = null,
     string baseFolderPath = "",
     Guid agencyKey = default)
         {
-            if (affidavit == null || affidavit.Count == 0)
+            if (affidavitJson == null || affidavitJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
             var module = "Affidavits";
-
-            var affidavitJson = JObject.FromObject(affidavit);
-
-            string affidavitNumber = affidavitJson["Document"]?["AffidavitsData"]?["Case Number"]?.ToString() ?? "Unknown";
 
 
             try
@@ -48,7 +46,7 @@ ImportAffidavitsAsync(
                     apiToken,
                     agencyKey.ToString(),
                     module,
-                    affidavitNumber,
+                    moduleNumber,
                     baseFolderPath,
                     affidavitJson,
                     "",
@@ -70,17 +68,17 @@ ImportAffidavitsAsync(
                 var response = await _httpClientService.SendApiRequest<object>(requestModel);
 
                 if (response == null)
-                    return (false, null, $"{affidavitNumber}: No response from server");
+                    return (false, null, $"{moduleNumber}: No response from server");
 
                 if ((int)response.StatusCode < 200 || (int)response.StatusCode >= 300)
-                    return (false, response.StatusCode, $"{affidavitNumber}: {response.StatusCode} - {response.Message}");
+                    return (false, response.StatusCode, $"{moduleNumber}: {response.StatusCode} - {response.Message}");
             }
             catch (Exception ex)
             {
-                return (false, null, $"{affidavitNumber}: Exception - {ex.Message}");
+                return (false, null, $"{moduleNumber}: Exception - {ex.Message}");
             }
 
-            return (true, System.Net.HttpStatusCode.OK, null);
+            return (true, System.Net.HttpStatusCode.OK, string.Empty);
         }
 
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArchivingTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03ee19994019fecf2b52caaf432288a054535be1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArchivingTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArchivingTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

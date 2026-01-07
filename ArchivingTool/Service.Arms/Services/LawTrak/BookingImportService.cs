@@ -8,9 +8,11 @@ namespace ArchivingTool.Service.Arms.Services.LawTrak
 {
     public class BookingImportService
     {
+        private readonly BlobUploadHelper blobUploadHelper;
         private readonly HttpClientService _httpClientService;
         public BookingImportService()
         {
+            blobUploadHelper = new BlobUploadHelper();
             _httpClientService = new HttpClientService();
 
         }
@@ -18,19 +20,17 @@ namespace ArchivingTool.Service.Arms.Services.LawTrak
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
 ImportBookingAsync(
     string apiToken,
-    Dictionary<string, object> bookingData,
+    JObject bookingJson,
+    string moduleNumber,
     Guid? historyId = null,
     string baseFolderPath = "",
     Guid agencyKey = default)
         {
-            if (bookingData == null || bookingData.Count == 0)
+            if (bookingJson == null || bookingJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
             var module = "Booking";
-
-            var bookingJson = JObject.FromObject(bookingData);
-            string moduleNumber = bookingJson["Document"]?["BookingsData"]?["Booking Number"]?.ToString() ?? "Unknown";
 
             try
             {
@@ -65,7 +65,7 @@ ImportBookingAsync(
                 if ((int)response.StatusCode < 200 || (int)response.StatusCode >= 300)
                     return (false, response.StatusCode, $"{moduleNumber}: {response.StatusCode} - {response.Message}");
 
-                return (true, System.Net.HttpStatusCode.OK, null);
+                return (true, response.StatusCode, string.Empty);
             }
             catch (Exception ex)
             {

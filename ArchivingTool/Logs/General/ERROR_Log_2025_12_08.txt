@@ -1,0 +1,13 @@
+2025-12-08 15:41:32 [ERROR]  System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'sp_Inventory_Maintenance_Mapped' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at ArchivingTool.Form1.ApplyStoredProceduresForRmsAsync(String rmsName) in C:\End2End\ArmsArchiving\Dataport_Migration_Tool\ArchivingTool\Form1.cs:line 1900
+   at ArchivingTool.Form1.BtnLawTrak_Migration_Click(Object sender, EventArgs e) in C:\End2End\ArmsArchiving\Dataport_Migration_Tool\ArchivingTool\Form1.cs:line 1930
+ClientConnectionId:4a4480be-20aa-41ef-bb95-18e368133af4
+Error Number:2714,State:3,Class:16

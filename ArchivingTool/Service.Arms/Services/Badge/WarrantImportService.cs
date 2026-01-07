@@ -8,25 +8,30 @@ namespace ArchivingTool.Service.Arms.Services.Badge
 {
     public class WarrantImportService
     {
-
+        private readonly BlobUploadHelper blobUploadHelper;
         private readonly HttpClientService _httpClientService;
 
         public WarrantImportService()
         {
+            blobUploadHelper = new BlobUploadHelper();
+
             _httpClientService = new HttpClientService();
         }
 
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
-ImportWarrantsAsync(string apiToken, Dictionary<string, object> warrant, Guid? historyId = null, string baseFolderPath = "", Guid agencyKey = default)
+ImportWarrantAsync(
+    string apiToken,
+    JObject warrantJson,
+    string moduleNumber,
+    Guid? historyId = null,
+    string baseFolderPath = "",
+    Guid agencyKey = default)
         {
-            if (warrant == null || warrant.Count == 0)
+            if (warrantJson == null || warrantJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
             var module = "Warrants";
-
-            var warrantJson = JObject.FromObject(warrant);
-            string moduleNumber = warrantJson["WarrantsData"]?["Warrant Number"]?.ToString() ?? "Unknown";
 
             try
             {
@@ -37,6 +42,7 @@ ImportWarrantsAsync(string apiToken, Dictionary<string, object> warrant, Guid? h
                     moduleNumber,
                     baseFolderPath,
                     warrantJson,
+                    "",
                     "Badge"
                 );
 
@@ -45,7 +51,7 @@ ImportWarrantsAsync(string apiToken, Dictionary<string, object> warrant, Guid? h
 
                 var requestModel = new CommonRequestModel
                 {
-                    Endpoint = "External/Warrants",
+                    Endpoint = "Document/Warrants",
                     RequestMethod = HttpMethod.Post,
                     RequestAuthMethod = Enums.AuthorizationMethod.Token,
                     ApiToken = apiToken,
@@ -59,14 +65,14 @@ ImportWarrantsAsync(string apiToken, Dictionary<string, object> warrant, Guid? h
 
                 if ((int)response.StatusCode < 200 || (int)response.StatusCode >= 300)
                     return (false, response.StatusCode, $"{moduleNumber}: {response.StatusCode} - {response.Message}");
+
+                return (true, response.StatusCode, string.Empty);
             }
             catch (Exception ex)
             {
                 return (false, null, $"{moduleNumber}: Exception - {ex.Message}");
             }
-
-            return (true, System.Net.HttpStatusCode.OK, null);
         }
-
     }
 }
+

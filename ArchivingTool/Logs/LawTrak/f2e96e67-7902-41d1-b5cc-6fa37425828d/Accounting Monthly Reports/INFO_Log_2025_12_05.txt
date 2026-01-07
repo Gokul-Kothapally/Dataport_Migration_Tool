@@ -1,0 +1,5 @@
+2025-12-05 08:40:47 [INFO]  Executing: sp_Accounting_Monthly_Reports_Mapped
+2025-12-05 08:40:47 [INFO]  -------------------
+2025-12-05 08:40:47 [INFO]  Accounting Monthly Reports Logs
+2025-12-05 08:40:47 [INFO]  Batch 0
+2025-12-05 08:40:47 [INFO]  -------------------

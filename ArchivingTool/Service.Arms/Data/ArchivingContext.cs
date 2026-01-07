@@ -1,5 +1,4 @@
-﻿using ArchivingTool.Service.Arms.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace ArchivingTool.Service.Arms.Data
 {

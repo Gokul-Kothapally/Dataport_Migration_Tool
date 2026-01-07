@@ -1,5 +1,4 @@
 ﻿using ArchivingTool.Model.Arms;
-using ArchivingTool.Models;
 using ArchivingTool.Service.Arms.Services.Common;
 using MongoDB.Bson;
 using Newtonsoft.Json.Linq;
@@ -14,46 +13,23 @@ namespace ArchivingTool.Service.Arms.Services.LawTrak
 {
     public class EvidenceImportService
     {
-
+        private readonly BlobUploadHelper blobUploadHelper;
         private readonly HttpClientService _httpClientService;
 
         public EvidenceImportService()
         {
+            blobUploadHelper = new BlobUploadHelper();
             _httpClientService = new HttpClientService();
         }
 
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
-ImportEvidencesAsync(
-    string apiToken,
-    Dictionary<string, object> evidence,
-    Guid? historyId = null,
-    string baseFolderPath = "",
-    Guid agencyKey = default)
+ImportEvidencesAsync(string apiToken, JObject evidenceJson, string moduleNumber, Guid? historyId = null, string baseFolderPath = "", Guid agencyKey = default)
         {
-            if (evidence == null || evidence.Count == 0)
+            if (evidenceJson == null || evidenceJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
             var module = "Evidences";
-
-            var evidenceJson = JObject.FromObject(evidence);
-
-            string evidenceType = evidenceJson["Document"]?["CitationsData"]?["Citation"]?.ToString() ?? "";
-
-            // deciding which field to use
-            string evidenceNumber;
-            if (evidenceType == "Main Entry")
-            {
-                evidenceNumber = evidenceJson["Document"]?["EvidencesMainData"]?["Incident"]?.ToString() ?? "Unknown";
-            }
-            else if (evidenceType == "Lost And Found")
-            {
-                evidenceNumber = evidenceJson["Document"]?["LostandFoundsData"]?["Control"]?.ToString() ?? "Unknown";
-            }
-            else
-            {
-                evidenceNumber = evidenceJson["Document"]?["EvidenceLogsData"]?["Case Number"]?.ToString() ?? "Unknown";
-            }
 
             try
             {
@@ -62,7 +38,7 @@ ImportEvidencesAsync(
                     apiToken,
                     agencyKey.ToString(),
                     module,
-                    evidenceNumber,
+                    moduleNumber,
                     baseFolderPath,
                     evidenceJson,
                     "",
@@ -84,17 +60,17 @@ ImportEvidencesAsync(
                 var response = await _httpClientService.SendApiRequest<object>(requestModel);
 
                 if (response == null)
-                    return (false, null, $"{evidenceNumber}: No response from server");
+                    return (false, null, $"{moduleNumber}: No response from server");
 
                 if ((int)response.StatusCode < 200 || (int)response.StatusCode >= 300)
-                    return (false, response.StatusCode, $"{evidenceNumber}: {response.StatusCode} - {response.Message}");
+                    return (false, response.StatusCode, $"{moduleNumber}: {response.StatusCode} - {response.Message}");
             }
             catch (Exception ex)
             {
-                return (false, null, $"{evidenceNumber}: Exception - {ex.Message}");
+                return (false, null, $"{moduleNumber}: Exception - {ex.Message}");
             }
 
-            return (true, System.Net.HttpStatusCode.OK, null);
+            return (true, System.Net.HttpStatusCode.OK, string.Empty);
         }
 
 

@@ -9,31 +9,31 @@ namespace ArchivingTool.Service.Arms.Services.Badge
     public class CallImportService
     {
         private readonly HttpClientService _httpClientService;
+        private readonly BlobUploadHelper blobUploadHelper;
         public CallImportService()
         {
+             blobUploadHelper = new BlobUploadHelper(); 
             _httpClientService = new HttpClientService();
-
         }
 
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
-ImportCallsAsync(
+ImportCallAsync(
     string apiToken,
-    Dictionary<string, object> callData,
+    JObject callJson,
+    string moduleNumber,
     Guid? historyId = null,
     string baseFolderPath = "",
     Guid agencyKey = default)
         {
-            if (callData == null || callData.Count == 0)
+            if (callJson == null || callJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
             var module = "Calls";
-
-            var callJson = JObject.FromObject(callData);
-            string moduleNumber = callJson["CallData"]?["CFS Number"]?.ToString() ?? "Unknown";
 
             try
             {
+                // Process attachments if any
                 await attachmentService.ProcessAttachmentsRecursiveAsync(
                     apiToken,
                     agencyKey.ToString(),
@@ -41,6 +41,7 @@ ImportCallsAsync(
                     moduleNumber,
                     baseFolderPath,
                     callJson,
+                    "",
                     "Badge"
                 );
 
@@ -49,7 +50,7 @@ ImportCallsAsync(
 
                 var requestModel = new CommonRequestModel
                 {
-                    Endpoint = "External/Calls",
+                    Endpoint = "Document/Calls",
                     RequestMethod = HttpMethod.Post,
                     RequestAuthMethod = Enums.AuthorizationMethod.Token,
                     ApiToken = apiToken,
@@ -63,13 +64,13 @@ ImportCallsAsync(
 
                 if ((int)response.StatusCode < 200 || (int)response.StatusCode >= 300)
                     return (false, response.StatusCode, $"{moduleNumber}: {response.StatusCode} - {response.Message}");
-
-                return (true, System.Net.HttpStatusCode.OK, null);
             }
             catch (Exception ex)
             {
                 return (false, null, $"{moduleNumber}: Exception - {ex.Message}");
             }
+
+            return (true, System.Net.HttpStatusCode.OK, string.Empty);
         }
 
 

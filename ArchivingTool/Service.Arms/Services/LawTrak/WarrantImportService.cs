@@ -8,25 +8,23 @@ namespace ArchivingTool.Service.Arms.Services.LawTrak
 {
     public class WarrantImportService
     {
-
+        private readonly BlobUploadHelper blobUploadHelper;
         private readonly HttpClientService _httpClientService;
 
         public WarrantImportService()
         {
+            blobUploadHelper = new BlobUploadHelper();
             _httpClientService = new HttpClientService();
         }
 
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
-ImportWarrantsAsync(string apiToken, Dictionary<string, object> warrant, Guid? historyId = null, string baseFolderPath = "", Guid agencyKey = default)
+ImportWarrantsAsync(string apiToken, JObject warrantJson, string moduleNumber, Guid? historyId = null, string baseFolderPath = "", Guid agencyKey = default)
         {
-            if (warrant == null || warrant.Count == 0)
+            if (warrantJson == null || warrantJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
             var module = "Warrants";
-
-            var warrantJson = JObject.FromObject(warrant);
-            string moduleNumber = warrantJson["Document"]?["WarrantsData"]?["Warrant Number"]?.ToString() ?? "Unknown";
 
             try
             {
@@ -66,7 +64,7 @@ ImportWarrantsAsync(string apiToken, Dictionary<string, object> warrant, Guid? h
                 return (false, null, $"{moduleNumber}: Exception - {ex.Message}");
             }
 
-            return (true, System.Net.HttpStatusCode.OK, null);
+            return (true, System.Net.HttpStatusCode.OK, string.Empty);
         }
 
     }

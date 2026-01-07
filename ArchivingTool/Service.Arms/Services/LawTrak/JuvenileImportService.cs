@@ -1,5 +1,4 @@
 ﻿using ArchivingTool.Model.Arms;
-using ArchivingTool.Models;
 using ArchivingTool.Service.Arms.Services.Common;
 using MongoDB.Bson;
 using Newtonsoft.Json.Linq;
@@ -14,32 +13,29 @@ namespace ArchivingTool.Service.Arms.Services.LawTrak
 {
     public class JuvenileImportService
     {
-
+        private readonly BlobUploadHelper blobUploadHelper;
         private readonly HttpClientService _httpClientService;
 
         public JuvenileImportService()
         {
+            blobUploadHelper = new BlobUploadHelper();
             _httpClientService = new HttpClientService();
         }
 
         public async Task<(bool Success, System.Net.HttpStatusCode? StatusCode, string Message)>
 ImportJuvenileAsync(
     string apiToken,
-    Dictionary<string, object> juveniles,
+    JObject juvenileJson,
+    string moduleNumber,
     Guid? historyId = null,
     string baseFolderPath = "",
     Guid agencyKey = default)
         {
-            if (juveniles == null || juveniles.Count == 0)
+            if (juvenileJson == null || juvenileJson.Count == 0)
                 return (false, null, "No data");
 
-            var attachmentService = new AttachmentService(_httpClientService);
+            var attachmentService = new AttachmentService(_httpClientService, blobUploadHelper);
             var module = "Juveniles";
-
-            var juvenileJson = JObject.FromObject(juveniles);
-
-            string juvenileNumber = juvenileJson["Document"]?["JuvenilesData"]?["Unique Number"]?.ToString() ?? "Unknown";
-
 
             try
             {
@@ -48,7 +44,7 @@ ImportJuvenileAsync(
                     apiToken,
                     agencyKey.ToString(),
                     module,
-                    juvenileNumber,
+                    moduleNumber,
                     baseFolderPath,
                     juvenileJson,
                     "",
@@ -80,7 +76,7 @@ ImportJuvenileAsync(
                 return (false, null, $"{juvenileJson}: Exception - {ex.Message}");
             }
 
-            return (true, System.Net.HttpStatusCode.OK, null);
+            return (true, System.Net.HttpStatusCode.OK, string.Empty);
         }
 
     }
